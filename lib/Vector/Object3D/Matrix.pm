@@ -4,7 +4,7 @@ package Vector::Object3D::Matrix;
 
 Vector::Object3D::Matrix - Matrix definitions and basic operations
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   use Vector::Object3D::Matrix;
 

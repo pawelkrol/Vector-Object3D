@@ -4,7 +4,7 @@ package Vector::Object3D::Point::Cast;
 
 Vector::Object3D::Point::Cast - Three-dimensional point object casting into two-dimensional surface areas
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   package Vector::Object3D::Point;
 

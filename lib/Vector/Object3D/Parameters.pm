@@ -2,9 +2,9 @@ package Vector::Object3D::Parameters;
 
 =head1 NAME
 
-Vector::Object3D::Parameters - additional vector object parameters
+Vector::Object3D::Parameters - Additional vector object parameters
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   package Vector::Object3D::Matrix;
 

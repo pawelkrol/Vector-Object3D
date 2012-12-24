@@ -4,9 +4,12 @@ package Vector::Object3D;
 
 Vector::Object3D - Three-dimensional object type definitions and operations
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   use Vector::Object3D;
+
+  use Readonly;
+  Readonly my $pi => 3.14159;
 
   # Create an instance of a class:
   my $object = Vector::Object3D->new(polygons => [$polygon1, $polygon2, $polygon3]);
@@ -297,7 +300,7 @@ sub print {
     return;
 }
 
-=head2
+=head2 translate
 
 Move object a constant distance in a specified direction:
 
@@ -326,7 +329,7 @@ sub translate {
     return $object_translated;
 }
 
-=head2
+=head2 scale
 
 Enlarge, shrink or stretch object by a scale factor:
 
@@ -355,7 +358,7 @@ sub scale {
     return $object_scaled;
 }
 
-=head2
+=head2 rotate
 
 Rotate object by a given angle around three rotation axis:
 
@@ -384,7 +387,7 @@ sub rotate {
     return $object_rotated;
 }
 
-=head2
+=head2 cast
 
 Project object onto a two-dimensional plane using an orthographic projection:
 
@@ -420,7 +423,7 @@ Compare two objects:
 
   my $are_the_same = $object1 == $object2;
 
-Overloaded comparison operator evaluates to true whenever two object objects are identical (all their endpoints are located at exactly same positions, note that polygon order matters as well).
+Overloaded comparison operator evaluates to true whenever two objects are identical (all their polygons are exactly the same, note that polygon order matters as well).
 
 =cut
 
@@ -442,6 +445,16 @@ sub _comparison {
 
     return 1;
 }
+
+=head2 negative compare (!=)
+
+Compare two objects:
+
+  my $are_not_the_same = $object1 != $object1;
+
+Overloaded negative comparison operator evaluates to true whenever two objects differ (any of their corresponding polygons are located at different points in the 3D space).
+
+=cut
 
 sub _negative_comparison {
     my ($self, $arg) = @_;

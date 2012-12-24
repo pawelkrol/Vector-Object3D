@@ -4,7 +4,7 @@ package Vector::Object3D::Line;
 
 Vector::Object3D::Line - Three-dimensional line object definitions
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   use Vector::Object3D::Line;
 

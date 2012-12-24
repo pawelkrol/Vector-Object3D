@@ -2,9 +2,9 @@ package Vector::Object3D::Matrix::Transform;
 
 =head1 NAME
 
-Vector::Object3D::Matrix::Transform - construction of graphical transformation matrices
+Vector::Object3D::Matrix::Transform - Construction of graphical transformation matrices
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   package Vector::Object3D::Matrix;
 

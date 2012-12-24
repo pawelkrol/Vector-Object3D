@@ -4,7 +4,7 @@ package Vector::Object3D::Point::Transform;
 
 Vector::Object3D::Point::Transform - Three-dimensional point object transformations
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   package Vector::Object3D::Point;
 

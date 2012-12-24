@@ -4,7 +4,7 @@ package Vector::Object3D::Point;
 
 Vector::Object3D::Point - Three-dimensional point object definitions and operations
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   use Vector::Object3D::Point;
 

@@ -4,7 +4,7 @@ package Vector::Object3D::Polygon;
 
 Vector::Object3D::Polygon - Three-dimensional polygon object definitions and operations
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
   use Vector::Object3D::Polygon;
 
@@ -353,7 +353,7 @@ sub print {
     return;
 }
 
-=head2
+=head2 translate
 
 Move polygon a constant distance in a specified direction:
 
@@ -382,7 +382,7 @@ sub translate {
     return $polygon_translated;
 }
 
-=head2
+=head2 scale
 
 Enlarge, shrink or stretch polygon by a scale factor:
 
@@ -411,7 +411,7 @@ sub scale {
     return $polygon_scaled;
 }
 
-=head2
+=head2 rotate
 
 Rotate polygon by a given angle around three rotation axis:
 
@@ -440,7 +440,7 @@ sub rotate {
     return $polygon_rotated;
 }
 
-=head2
+=head2 cast
 
 Project polygon onto a two-dimensional plane using an orthographic projection:
 
@@ -470,7 +470,7 @@ sub cast {
     return $polygon_casted;
 }
 
-=head2
+=head2 is_plane_visible
 
 Check whether polygon's plane is visible to the observer located at the given point:
 
@@ -630,7 +630,7 @@ Compare two polygon objects:
 
   my $are_the_same = $polygon1 == $polygon2;
 
-Overloaded comparison operator evaluates to true whenever two polygon objects are identical (all their endpoints are located at exactly same positions, note that vertex order matters as well).
+Overloaded comparison operator evaluates to true whenever two polygon objects are identical (all of their endpoints are located at exactly same positions, note that vertex order matters as well).
 
 =cut
 
@@ -652,6 +652,16 @@ sub _comparison {
 
     return 1;
 }
+
+=head2 negative compare (!=)
+
+Compare two polygon objects:
+
+  my $are_not_the_same = $polygon1 != $polygon2;
+
+Overloaded negative comparison operator evaluates to true whenever two polygon objects differ (any of their corresponding endpoints are not located at exactly same position).
+
+=cut
 
 sub _negative_comparison {
     my ($self, $arg) = @_;
