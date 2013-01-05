@@ -13,6 +13,11 @@ To install this module type the following:
     make test
     make install
 
+DOCUMENTATION
+-------------
+
+A comprehensive module documentation is available on [CPAN](http://search.cpan.org/~pawelkrol/Vector-Object3D/lib/Vector/Object3D.pm).
+
 COPYRIGHT AND LICENCE
 ---------------------
 
