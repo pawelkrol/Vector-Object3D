@@ -1,5 +1,8 @@
 Revision history for Perl extension Vector::Object3D.
 
+0.02  2013-10-04
+    - missing dependency on Test::Moose package added to Makefile.PL
+
 0.01  2012-12-24
     - initial version (provides miscellaneous procedures to handle vector
       object calculations in the 3D space, including basic transformations

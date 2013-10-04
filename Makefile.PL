@@ -11,6 +11,7 @@ WriteMakefile(
                             Scalar::Util     => 0,
                             Test::Deep       => 0,
                             Test::Exception  => 0,
+                            Test::Moose      => 0,
                             Test::More       => 0,
                         },
     ($] >= 5.005 ?
