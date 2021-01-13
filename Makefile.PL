@@ -17,4 +17,19 @@ WriteMakefile(
     ($] >= 5.005 ?
       (ABSTRACT_FROM => 'lib/Vector/Object3D.pm',
        AUTHOR        => 'Pawel Krol <pawelkrol@cpan.org>') : ()),
+    META_MERGE        => {
+        'meta-spec' => {
+            'version' => 2,
+        },
+        'resources' => {
+            'bugtracker' => {
+                'web' => 'https://github.com/pawelkrol/Vector-Object3D/issues',
+            },
+            'repository' => {
+                'type' => 'git',
+                'url'  => 'git://github.com/pawelkrol/Vector-Object3D.git',
+                'web'  => 'https://github.com/pawelkrol/Vector-Object3D.git',
+            },
+        },
+    },
 );
